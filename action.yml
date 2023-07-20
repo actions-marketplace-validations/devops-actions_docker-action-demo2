@@ -1,9 +1,11 @@
-name: "Dockerfile example"
-author: "rajbos"
-description: "This is a simple example of a Dockerfile action that runs a shell script."
+name: 'Your name here'
+description: 'Provide a description here'
+author: 'Your name or organization here'
+inputs:
+  milliseconds: # change this
+    required: true
+    description: 'input description here'
+    default: 'default value if applicable'
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
-branding:
-  icon: 'award'
-  color: 'green'
+  using: 'node16'
+  main: 'dist/index.js'
